@@ -1,4 +1,3 @@
-import { FAQS } from "components/FAQS";
 import { DarkBlock } from "components/Home/DarkBlock";
 import { Gallery } from "components/Home/Gallery";
 import { GreenBlock } from "components/Home/GreenBlock";

@@ -11,8 +11,6 @@ import IMG2 from "./static/gallery/img2.jpg";
 import IMG3 from "./static/gallery/img3.jpg";
 import IMG4 from "./static/gallery/img4.jpg";
 
-import "swiper/css";
-
 const upperImages = [IMG1, IMG2, IMG3, IMG4];
 const lowerImages = [IMG2_2, IMG2_3, IMG2_4];
 
@@ -68,38 +66,16 @@ export function Gallery() {
 
   return (
     <section className={"min-h-screen pb-40"}>
-      {/* <div className="mb-4 flex flex-nowrap gap-x-4 overflow-hidden">
+      <div ref={sliderUpper} className={"keen-slider mb-2 md:mb-3 lg:mb-4"}>
         {upperImages.map((img, Idx) => (
-          <div key={Idx}>
-            <Image
-              className={"shrink-0 basis-1/3"}
-              src={img}
-              alt={"Staff image"}
-            />
-          </div>
-        ))}
-      </div>
-      <div className="mb-4 flex flex-nowrap gap-x-4 overflow-hidden">
-        {lowerImages.map((img, Idx) => (
-          <div key={Idx}>
-            <Image
-              className={"shrink-0 basis-1/3"}
-              src={img}
-              alt={"Staff image"}
-            />
-          </div>
-        ))}
-      </div> */}
-      <div ref={sliderUpper} className="keen-slider mb-2 md:mb-3 lg:mb-4">
-        {upperImages.map((img, Idx) => (
-          <div key={Idx} className="keen-slider__slide">
+          <div key={Idx} className={"keen-slider__slide"}>
             <Image src={img} alt={"Staff image"} />
           </div>
         ))}
       </div>
-      <div ref={sliderLower} className="keen-slider">
+      <div ref={sliderLower} className={"keen-slider"}>
         {lowerImages.map((img, Idx) => (
-          <div key={Idx} className="keen-slider__slide">
+          <div key={Idx} className={"keen-slider__slide"}>
             <Image src={img} alt={"Staff image"} />
           </div>
         ))}

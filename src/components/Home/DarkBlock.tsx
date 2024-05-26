@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 import { Container } from "common/Container";
 import { Title } from "common/Title";

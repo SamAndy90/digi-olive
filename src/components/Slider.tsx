@@ -66,9 +66,9 @@ export function Slider({ title, titleClasses }: SliderProps) {
           {title}
         </Title>
       </Container>
-      <div ref={sliderRef} className="keen-slider">
+      <div ref={sliderRef} className={"keen-slider"}>
         {staff.map((person, Idx) => (
-          <div key={Idx} className="keen-slider__slide">
+          <div key={Idx} className={"keen-slider__slide"}>
             <Image
               src={person.image}
               alt={"Staff image"}

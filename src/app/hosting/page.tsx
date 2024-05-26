@@ -1,7 +1,6 @@
 import { HostingHero } from "components/HostingHero";
 import { HostingRobotoText } from "components/HostingRobotoText";
 import { RetroCar } from "components/RetroCar";
-import { Slider } from "components/Slider";
 import { TextColumns } from "components/TextColumns";
 import { TitleTextSection } from "components/TitleTextSection";
 
