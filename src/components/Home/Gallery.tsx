@@ -17,11 +17,9 @@ const lowerImages = [IMG2_2, IMG2_3, IMG2_4];
 export function Gallery() {
   const [sliderUpper] = useKeenSlider({
     loop: true,
-    initial: 0,
     slides: {
       perView: 1,
       spacing: 8,
-      origin: "center",
     },
 
     breakpoints: {
@@ -36,7 +34,6 @@ export function Gallery() {
         slides: {
           perView: 3,
           spacing: 16,
-          origin: "center",
         },
       },
     },
@@ -68,8 +65,12 @@ export function Gallery() {
     <section className={"min-h-screen pb-40"}>
       <div ref={sliderUpper} className={"keen-slider mb-2 md:mb-3 lg:mb-4"}>
         {upperImages.map((img, Idx) => (
-          <div key={Idx} className={"keen-slider__slide"}>
-            <Image src={img} alt={"Staff image"} />
+          <div key={Idx} className={"keen-slider__slide lg:!overflow-visible"}>
+            <Image
+              src={img}
+              alt={"Staff image"}
+              className={"lg:!translate-x-[calc(50%+8px)]"}
+            />
           </div>
         ))}
       </div>
